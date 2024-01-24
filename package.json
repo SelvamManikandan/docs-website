@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev" :"nodemon backend/index.js",
-    "start-dev": "node backend/index.js",
+    "start": "node backend/index.js",
     "bulid":"npm install && npm install --prefix frontend && npm run bulid --prefix frontend"
   },
   "author": "Manikandan",
