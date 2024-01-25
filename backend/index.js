@@ -10,7 +10,13 @@ import reviewRoute from "../backend/Routes/review.js";
 dotenv.config()
 
 const app = express()
-app.use(cors());
+app.use(cors(
+    {
+    origin: ["https://deploy-mern-lwhq.vercel.app"],
+    method: ["POST", "GET"],
+    credentials: true
+    }
+));
 const port = process.env.PORT || 8000
 
 
